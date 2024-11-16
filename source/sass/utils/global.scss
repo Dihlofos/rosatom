@@ -1,0 +1,116 @@
+html {
+  @include font(10px, 10px, 400);
+
+  @media (max-width: $desktop) {
+    @include font(10px, 10px, 400);
+  }
+
+  @media (max-width: $laptop) {
+    @include font(8px, 8px, 400);
+  }
+
+  @media (max-width: $tablet) {
+    @include font(10px, 10px, 400);
+  }
+}
+
+body {
+  @include font(1.6rem, 1.4, 400);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: $montserrat;
+  color: $black;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: $white;
+
+  @media (max-width: $laptop) {
+    // шаблон медиа-запроса desktop-first
+  }
+
+  @media (min-resolution: $extra) {
+    // шаблон для фонового изображения на экранах с повышенной плотностью пикселей
+  }
+}
+
+.gradient {
+  max-width: initial !important;
+}
+
+button {
+  font-family: $montserrat;
+}
+
+body,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  flex-grow: 1;
+}
+
+.main.container{
+  background-color: $white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grecaptcha-badge {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 116rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  box-sizing: content-box;
+
+
+
+  @media (max-width: $laptop) {
+    min-width: 67.8rem;
+    padding: 0 4.5rem;
+  }
+
+  @media (max-width: $tablet) {
+    min-width: initial;
+    max-width: initial;
+    padding: 0 24px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 16px;
+  }
+}
+
+.rtl {
+  direction: rtl;
+}
+
+
+

@@ -1,0 +1,38 @@
+.tabs {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__tab {
+    color: $blue2;
+    background: none;
+    border: 0.2rem solid $blue2;
+    border-radius: 30px;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    color: $blue2;
+    padding: 0.7rem 2.6rem;
+    cursor: pointer;
+
+    @media (max-width: 1024px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    &.active {
+      background: var(--Gradient, linear-gradient(158deg, #4B95D1 13.27%, #4584BF 23.81%, #35558C 56.26%, #2B376D 80.6%, #282D62 94.39%));
+      color: $white;
+      border: none;
+    }
+  }
+
+}
