@@ -9,7 +9,6 @@
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       if (tab.classList.contains(activeClass)) return;
-      console.log("tab", tab.dataset.lang);
       clearTabs();
       tab.classList.add(activeClass);
 
